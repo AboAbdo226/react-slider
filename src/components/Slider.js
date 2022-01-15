@@ -18,7 +18,7 @@ export default function MySlider() {
   function show() {
     return list.map((item) => {
       return (
-        <div className="dd" key={item.id}>
+        <div className="card" key={item.id}>
           <img className="list-img" src={item.img} />
         </div>
       );
@@ -28,7 +28,6 @@ export default function MySlider() {
   return (
     <div className="slider-container">
       <Slider {...Config}>{show()}</Slider>
-      <h1>ana</h1>
     </div>
   );
 }
